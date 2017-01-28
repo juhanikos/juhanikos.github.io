@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Curriculum Vitae</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+			<div class="title">
+				<h1>Curriculum Vitae</h1>
+			</div>
+			<div class="data">
+				<img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10150609_10203744159224265_315360698027256438_n.jpg?oh=d4325c037a4e2fde66fc1eccc9aa32fb&oe=58D45350" class="profileImage"></img>
+					<div class="header">Name: </div>
+						<li>Juhani Koskinen</li>
+					<div class="header">City: </div>
+						<li>Turku</li>
+					<div class="header">Address: </div>
+						<li>YO-kylä 15 A 4</li>
+					<div class="header">Phone Number: </div>
+						<li>+358400253553</li>
+					<br>
+					<br>
+					<div id="dropdown">
+						<a id="worklink">- Work experience</a>
+					</div>
+					<div class="work">
+						<div class="header">Company: </div>
+							<h2>Teleste</h2>
+						<div class="header">Career: </div>
+							<h2>Electronics worker</h2>
+						<div class="header">Tasks: </div>
+							<h2>Assemblying and testing of optical devices</h2>
+						<div class="header">Duration: </div>
+							<h2>21.06.2016 - 04.09.2016</h2>
+					</div>
+					<div class="work">
+						<div class="header">Company: </div>
+							<h2>Hesburger</h2>
+						<div class="header">Career: </div>
+							<h2>Restaurant worker</h2>
+						<div class="header">Tasks: </div>
+							<h2>Customer service and cooking</h2>
+						<div class="header">Duration: </div>
+							<h2>21.06.2016 - 04.09.2016</h2>
+					</div>
+					<div class="work">
+						<div class="header">Company: </div>
+							<h2>Itella Oy</h2>
+						<div class="header">Career: </div>
+							<h2>Distributor of newspaper</h2>
+						<div class="header">Tasks: </div>
+							<h2>Handing out newspaper in the morning</h2>
+						<div class="header">Duration: </div>
+							<h2>21.06.2016 - 04.09.2016</h2>
+					</div>
+					<br>
+					<br>
+					<div id="dropdown">
+						<a id="skilllink">- Skills</a>
+					</div>
+					<div class="skills">
+						<br>
+						<h1 class="divTitle">IT-Skills</h1>
+						<br>
+						<h1 class="header">C#: </h1>
+							<li>Proficient (Unity, .NET)</li>
+						<h1 class="header">C++: </h1>
+							<li>Good (UnrealEngine, Simple DirectMedia Layer)</li>
+						<h1 class="header">Web-programming: </h1>
+							<li>Proficient (HTML, CSS, JavaScript, jQuery, php)</li>
+						<h1 class="header">Databases: </h1>
+							<li>Proficient (SQL, MongoDB)</li>
+						<br>
+						<h1 class="divTitle">Languages</h1>
+						<br>
+						<h1 class="header">Finnish: </h1>
+							<li>Mothertongue</li>
+						<h1 class="header">English: </h1>
+							<li>Proficient user</li>
+						<h1 class="header">Swedish: </h1>
+							<li>Independent user</li>
+						<h1 class="header">Japanese: </h1>
+							<li>Basic user</li>
+					</div>
+					<br>
+			</div>
+	</body>
+	
+	<script>
+	$(document).ready(function() {
+	
+	$("#worklink").click(function() {
+			$(".work").slideToggle("slow");
+			if($(".work").height() > 0)
+			{
+				$("#worklink").html("+ Work experience");
+			}
+			else
+			{
+				$("#worklink").html("- Work experience");
+			}
+	});
+	
+	$("#skilllink").click(function() {
+			$(".skills").slideToggle("slow");
+			if($(".skills").height() > 0)
+			{
+				$("#skilllink").html("+ Skills");
+			}
+			else
+			{
+				$("#skilllink").html("- Skills");
+			}
+	});
+	
+	});
+	</script>
+	
+</html>
