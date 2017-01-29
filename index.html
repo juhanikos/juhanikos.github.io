@@ -23,6 +23,23 @@
 					<br>
 					<br>
 					<div id="dropdown">
+						<a id="educationlink">- Education</a>
+					</div>
+					<div class="education">
+						<h1 class="divTitle">Turku University of Applied Sciences</h1>
+						<h1 class="header">Department: </h1>
+							<li>Information and Communications Technology</li>
+						<h1 class="header">Specialization: </h1>
+							<li>Health Informatics</li>
+						<h1 class="header">Credits: </h1>
+							<li>124/240</li>
+						<h1 class="divTitle">Vihti Upper Secondary School</h1>
+						<h1 class="header">Graduated: </h1>
+							<li>12/2012</li>
+					</div>
+					<br>
+					<br>
+					<div id="dropdown">
 						<a id="worklink">- Work experience</a>
 					</div>
 					<div class="work">
@@ -112,6 +129,18 @@
 			else
 			{
 				$("#skilllink").html("- Skills");
+			}
+	});
+	
+	$("#educationlink").click(function() {
+			$(".education").slideToggle("slow");
+			if($(".education").height() > 0)
+			{
+				$("#educationlink").html("+ Education");
+			}
+			else
+			{
+				$("#educationlink").html("- Education");
 			}
 	});
 	
