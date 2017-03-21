@@ -8,7 +8,7 @@
 		.header { text-align: left; font-size: 20px; font-family: "Calibri"; font-weight: bold; background-color: black; color: white; padding-left: 10px; }
 		.profileImage {width: 410px; border: 5px solid black; float: left; margin: auto; }
 		.work { border-radius: 10px; width: 60%; text-align: left; margin: auto; border: 4px solid black; background-color: white; margin-top: 35px; margin-bottom: 35px; box-shadow: 0 0 50px black;}
-		.data li {list-style: square; text-align: left; font-size: 20px; font-family: "Calibri"; font-weight: bold; margin: 16.5px 20px; }
+		.data li {list-style: square; text-align: left; font-size: 15px; font-family: "Calibri"; font-weight: bold; margin: 16.5px 20px; }
 		.divTitle {font-size: 20px; font-family: 'Arial'; font-weight: bold; background-color: black; color: white; padding: 12px 0 12px 10px; text-align: left; background-color: #131a20;}
 		.information {display: flex; -webkit-flex-direction: column;}
 		
