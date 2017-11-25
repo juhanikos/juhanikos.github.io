@@ -1,7 +1,7 @@
 .container {
     margin-top: 20px; 
-    animation: fade 0.75s ease-in-out; 
-    -webkit-animation: slide 1s ease-in-out; 
+    animation: fade 0.75s ease-in-out;
+    -webkit-animation: slide 1s ease-in-out;
     padding: 20px;
     border: 1px solid lightgrey;
     background: white;
@@ -34,46 +34,6 @@
     }
 }
 
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        top: -100%;
-    }
-    100% {
-        opacity: 1;
-        top: 0;
-    }
-}
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-        top: -100%;
-    }
-    100% {
-        opacity: 1;
-        top: 0;
-    }
-}
-
-@-webkit-keyframes slideUp {
-    0% {
-        top: 0%;
-    }
-    100% {
-        top: -50%;
-    }
-}
-
-@keyframes slideUp {
-    0% {
-        top: 0;
-    }
-    100% {
-        top: -50%;
-    }
-}
-
 /*Print view*/
 @media print {
     @page { margin: 0; }
@@ -95,8 +55,6 @@
     width: 100%;
     left: 50%;
     margin-left: -50%;
-    animation: slide 0.2s ease-out;
-    -webkit-animation: slide 0.2s ease-out;
     padding: 15px;
     height: auto;
     background-color: #fefefe;
@@ -106,9 +64,26 @@
     border-top: none;
 }
 
-.infoModal.closed {
-    animation: slideUp 0.5s ease-in;
-    -webkit-animation: slideUp 0.5s ease-in;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+.modal-show-enter {
+    opacity: 0;
+    top: -50%;
+}
+
+.modal-show-enter-active {
+    opacity: 1;
+    top: 0%;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+.modal-show-leave {
+    opacity: 1;
+    top: 0%;
+}
+
+.modal-show-leave-active {
+    opacity: 0;
+    top: -50%;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
 }
