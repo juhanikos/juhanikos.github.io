@@ -1,0 +1,114 @@
+.container {
+    margin-top: 20px; 
+    animation: fade 0.75s ease-in-out; 
+    -webkit-animation: slide 1s ease-in-out; 
+    padding: 20px;
+    border: 1px solid lightgrey;
+    background: white;
+    border-radius: 6px;
+    box-shadow: grey 0px 0px 10px;
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        margin-top: 0;
+    }
+}
+
+/*Animations*/
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        top: -100%;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        top: -100%;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: -50%;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -50%;
+    }
+}
+
+/*Print view*/
+@media print {
+    @page { margin: 0; }
+    body { margin: 1.6cm; }
+    .container { 
+        max-width: none; 
+        padding: 0; 
+        margin: 0; 
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+    .btn { display: none; }
+}
+
+.infoModal {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+    animation: slide 0.2s ease-out;
+    -webkit-animation: slide 0.2s ease-out;
+    padding: 15px;
+    height: auto;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+.infoModal.closed {
+    animation: slideUp 0.5s ease-in;
+    -webkit-animation: slideUp 0.5s ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
