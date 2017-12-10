@@ -1,12 +1,16 @@
 .container {
     margin-top: 20px; 
     animation: fade 0.75s ease-in-out;
-    -webkit-animation: slide 1s ease-in-out;
+    -webkit-animation: fade 1s ease-in-out;
     padding: 20px;
     border: 1px solid lightgrey;
     background: white;
     border-radius: 6px;
     box-shadow: grey 0px 0px 10px;
+}
+
+.logo {
+    max-width: 75%;
 }
 
 @media screen and (max-width: 575px) {
